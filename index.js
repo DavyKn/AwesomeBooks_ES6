@@ -1,5 +1,5 @@
-import {Book} from './module/books.js';
-import {bookForm, books} from './module/intro.js';
+import Book from './module/books.js';
+import { bookForm, books } from './module/intro.js';
 import { DateTime } from './module/luxon.js';
 
 books.forEach(Book.createBook);

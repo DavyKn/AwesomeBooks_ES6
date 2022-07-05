@@ -1,5 +1,5 @@
-import {uniqueIdGen} from './uniqueCode.js';
-import {bookContainer, books} from './intro.js'
+import uniqueIdGen from './uniqueCode.js';
+import { bookContainer, books } from './intro.js';
 
 const uniqueId = uniqueIdGen();
 class Book {
@@ -53,4 +53,4 @@ class Book {
   };
 }
 
-export {Book};
+export default Book;
