@@ -49,10 +49,9 @@ class Book {
       books.splice(index, 1);
       localStorage.setItem('books', JSON.stringify(books));
       localStorage.removeItem('bookDiv');
-      bookDiv.remove();  
+      bookDiv.remove();
     });
   };
-  
 }
 
 export default Book;

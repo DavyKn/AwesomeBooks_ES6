@@ -10,7 +10,6 @@ bookForm.onsubmit = (e) => {
 
   bookForm.title.value = '';
   bookForm.author.value = '';
-    
 };
 
 const addNewAuthorLink = document.querySelector('.form-link');
