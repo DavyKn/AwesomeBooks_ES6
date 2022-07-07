@@ -7,6 +7,10 @@ bookForm.onsubmit = (e) => {
   e.preventDefault();
   const newBook = Book.addBook(new Book(bookForm.title.value, bookForm.author.value));
   Book.createBook(newBook);
+
+  bookForm.title.value = '';
+  bookForm.author.value = '';
+    
 };
 
 const addNewAuthorLink = document.querySelector('.form-link');

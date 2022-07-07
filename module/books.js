@@ -15,6 +15,7 @@ class Book {
       title: book.title,
       author: book.author,
       id: book.id,
+
     };
     books.push(x);
     localStorage.setItem('books', JSON.stringify(books));
@@ -48,9 +49,10 @@ class Book {
       books.splice(index, 1);
       localStorage.setItem('books', JSON.stringify(books));
       localStorage.removeItem('bookDiv');
-      bookDiv.remove();
+      bookDiv.remove();  
     });
   };
+  
 }
 
 export default Book;
